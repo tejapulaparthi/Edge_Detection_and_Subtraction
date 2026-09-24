@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Image Edge Detection App</h1>
+    <div class="card">
+    <h3>Upload template image</h3>
+    <img id="templateImage" alt="Template image">
+    <input type="file" id="templateInput" accept="image/*" class="templateInput">
+
+    <h3>Upload test image</h3>
+    <img id="testImagePreview" alt="Test image">
+    <input type="file" id="testInput" accept="image/*" class="testInput">
+</div>
+    <div class="card">
+        <h3>Edge Detection</h3>
+        <img id="outputImageEdges" alt="Edge detected image">
+        <button id="processButton">Detect edges</button>
+    </div>
+    <div class="card">
+        <h3>Image Subtraction</h3>
+        <img id="outputImageSubtract" alt="Subtracted image">
+        <button id="subtractButton">Subtract</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
